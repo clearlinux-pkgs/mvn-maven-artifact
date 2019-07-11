@@ -4,7 +4,7 @@
 #
 Name     : mvn-maven-artifact
 Version  : 2.0.5
-Release  : 2
+Release  : 3
 URL      : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact/2.0.5/maven-artifact-2.0.5.jar
 Source0  : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact/2.0.5/maven-artifact-2.0.5.jar
 Source1  : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact/2.0.5/maven-artifact-2.0.5.pom
@@ -19,12 +19,14 @@ Source9  : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact/2.2.0/
 Source10  : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact/2.2.0/maven-artifact-2.2.0.pom
 Source11  : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact/2.2.1/maven-artifact-2.2.1.jar
 Source12  : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact/2.2.1/maven-artifact-2.2.1.pom
-Source13  : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact/3.0/maven-artifact-3.0.jar
-Source14  : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact/3.0/maven-artifact-3.0.pom
-Source15  : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact/3.3.9/maven-artifact-3.3.9.jar
-Source16  : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact/3.3.9/maven-artifact-3.3.9.pom
-Source17  : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact/3.6.0/maven-artifact-3.6.0.jar
-Source18  : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact/3.6.0/maven-artifact-3.6.0.pom
+Source13  : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact/3.0.5/maven-artifact-3.0.5.jar
+Source14  : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact/3.0.5/maven-artifact-3.0.5.pom
+Source15  : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact/3.0/maven-artifact-3.0.jar
+Source16  : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact/3.0/maven-artifact-3.0.pom
+Source17  : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact/3.3.9/maven-artifact-3.3.9.jar
+Source18  : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact/3.3.9/maven-artifact-3.3.9.pom
+Source19  : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact/3.6.0/maven-artifact-3.6.0.jar
+Source20  : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact/3.6.0/maven-artifact-3.6.0.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-2.0
@@ -85,23 +87,29 @@ cp %{SOURCE11} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact/2.2.1
 cp %{SOURCE12} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact/2.2.1
 
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact/3.0
-cp %{SOURCE13} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact/3.0
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact/3.0.5
+cp %{SOURCE13} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact/3.0.5
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact/3.0.5
+cp %{SOURCE14} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact/3.0.5
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact/3.0
-cp %{SOURCE14} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact/3.0
+cp %{SOURCE15} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact/3.0
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact/3.0
+cp %{SOURCE16} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact/3.0
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact/3.3.9
-cp %{SOURCE15} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact/3.3.9
+cp %{SOURCE17} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact/3.3.9
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact/3.3.9
-cp %{SOURCE16} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact/3.3.9
+cp %{SOURCE18} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact/3.3.9
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact/3.6.0
-cp %{SOURCE17} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact/3.6.0
+cp %{SOURCE19} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact/3.6.0
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact/3.6.0
-cp %{SOURCE18} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact/3.6.0
+cp %{SOURCE20} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact/3.6.0
 
 
 %files
@@ -122,6 +130,8 @@ cp %{SOURCE18} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven
 /usr/share/java/.m2/repository/org/apache/maven/maven-artifact/2.2.0/maven-artifact-2.2.0.pom
 /usr/share/java/.m2/repository/org/apache/maven/maven-artifact/2.2.1/maven-artifact-2.2.1.jar
 /usr/share/java/.m2/repository/org/apache/maven/maven-artifact/2.2.1/maven-artifact-2.2.1.pom
+/usr/share/java/.m2/repository/org/apache/maven/maven-artifact/3.0.5/maven-artifact-3.0.5.jar
+/usr/share/java/.m2/repository/org/apache/maven/maven-artifact/3.0.5/maven-artifact-3.0.5.pom
 /usr/share/java/.m2/repository/org/apache/maven/maven-artifact/3.0/maven-artifact-3.0.jar
 /usr/share/java/.m2/repository/org/apache/maven/maven-artifact/3.0/maven-artifact-3.0.pom
 /usr/share/java/.m2/repository/org/apache/maven/maven-artifact/3.3.9/maven-artifact-3.3.9.jar
