@@ -4,7 +4,7 @@
 #
 Name     : mvn-maven-artifact
 Version  : 2.0.5
-Release  : 9
+Release  : 10
 URL      : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact/2.0.5/maven-artifact-2.0.5.jar
 Source0  : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact/2.0.5/maven-artifact-2.0.5.jar
 Source1  : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact/2.0.1/maven-artifact-2.0.1.jar
@@ -43,6 +43,8 @@ Source33  : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact/3.0/m
 Source34  : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact/3.0/maven-artifact-3.0.pom
 Source35  : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact/3.3.9/maven-artifact-3.3.9.jar
 Source36  : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact/3.3.9/maven-artifact-3.3.9.pom
+Source37  : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact/3.6.1/maven-artifact-3.6.1.jar
+Source38  : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact/3.6.1/maven-artifact-3.6.1.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-2.0
@@ -189,6 +191,12 @@ cp %{SOURCE35} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact/3.3.9
 cp %{SOURCE36} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact/3.3.9/maven-artifact-3.3.9.pom
 
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact/3.6.1
+cp %{SOURCE37} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact/3.6.1/maven-artifact-3.6.1.jar
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact/3.6.1
+cp %{SOURCE38} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact/3.6.1/maven-artifact-3.6.1.pom
+
 
 %files
 %defattr(-,root,root,-)
@@ -232,6 +240,8 @@ cp %{SOURCE36} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven
 /usr/share/java/.m2/repository/org/apache/maven/maven-artifact/3.0/maven-artifact-3.0.pom
 /usr/share/java/.m2/repository/org/apache/maven/maven-artifact/3.3.9/maven-artifact-3.3.9.jar
 /usr/share/java/.m2/repository/org/apache/maven/maven-artifact/3.3.9/maven-artifact-3.3.9.pom
+/usr/share/java/.m2/repository/org/apache/maven/maven-artifact/3.6.1/maven-artifact-3.6.1.jar
+/usr/share/java/.m2/repository/org/apache/maven/maven-artifact/3.6.1/maven-artifact-3.6.1.pom
 
 %files license
 %defattr(0644,root,root,0755)
